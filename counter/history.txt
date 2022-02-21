@@ -1,0 +1,9 @@
+#V2
+(contract-call? .counter count-up)
+(contract-call? .counter get-count tx-sender)
+::set_tx_sender ST1J4G6RR643BCG8G8SR6M2D9Z9KXT2NJDRK3FBTK
+(contract-call? 'ST1J4G6RR643BCG8G8SR6M2D9Z9KXT2NJDRK3FBTK.counter)
+(contract-call? 'ST1J4G6RR643BCG8G8SR6M2D9Z9KXT2NJDRK3FBTK.counter get-count tx-sender)
+(contract-call? 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.counter get-count tx-sender)
+count-up
+(contract-call? .counter count-up)
