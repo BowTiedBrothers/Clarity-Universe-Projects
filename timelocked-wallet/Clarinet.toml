@@ -1,7 +1,0 @@
-[project]
-name = "timelocked-wallet"
-requirements = []
-costs_version = 1
-[contracts.timelocked-wallet]
-path = "contracts/timelocked-wallet.clar"
-depends_on = []
