@@ -1,0 +1,47 @@
+#V2
+clarinet check
+(contract-call? .timelocked-wallet lock 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM u10 u100)
+::set_tx_sender ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5
+(contract-call? .timelocked-wallet 'ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5 claim)
+(contract-call? 'ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5.timelocked-wallet claim)
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.timelocked-wallet claim)
+::advance_chain_tip 10
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.timelocked-wallet claim)
+(contract-call? .timelocked-wallet lock 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM u10 u100)
+(contract-call? .timelocked-wallet lock 'ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5 u10 u100)
+::set_tx_sender ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5
+::advance_chain_tip 10
+(contract-call? 'ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5.timelocked-wallet claim)
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.timelocked-wallet claim)
+::get_asset_maps
+::get_asset_map
+::get_assets_maps
+(contract-call? timelocked-wallet lock 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM u10 u1000)
+(contract-call? .timelocked-wallet lock 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM u10 u1000)
+(contract-call? .timelocked-wallet lock 'ST2QXSK64YQX3CQPC530K79XWQ98XFAM9W3XKEH3N u10 u1000)
+::set_tx_sender ST2QXSK64YQX3CQPC530K79XWQ98XFAM9W3XKEH3N
+(contract-call? 'ST2QXSK64YQX3CQPC530K79XWQ98XFAM9W3XKEH3N.smart-claimant claim)
+::advance_chain_tip 10
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.smart-claimant claim)
+(contract-call? 'ST2QXSK64YQX3CQPC530K79XWQ98XFAM9W3XKEH3N.smart-claimant claim)
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.smart-claimant claim)
+(contract-call? .timelocked-wallet lock 'ST2QXSK64YQX3CQPC530K79XWQ98XFAM9W3XKEH3N.smart-claimant u10 u1000)
+::advance_chain_tip 10
+::get_assets_maps
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.smart-claimant claim)
+(contract-call? 'ST2QXSK64YQX3CQPC530K79XWQ98XFAM9W3XKEH3N.smart-claimant claim)
+(contract-call? .timelocked-wallet lock 'ST2QXSK64YQX3CQPC530K79XWQ98XFAM9W3XKEH3N u10 u1000)
+::advance_chain_tip 10
+::get_assets_maps
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.smart-claimant claim)
+(contract-call? .timelocked-wallet lock 'ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5 u10 u1000)
+::advance_chain_tip 10
+::set_tx_sender ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.smart-claimant claim)
+::get_assets_maps
+(contract-call? .smart-claimant 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM)
+(contract-call? .smart-claimant 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM claim)
+(contract-call? .smart-claimant claim 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM)
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.smart-claimant claim)
+::set_tx_sender ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.smart-claimant claim)
